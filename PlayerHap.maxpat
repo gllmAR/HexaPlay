@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 18.0, 217.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -99,9 +112,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 425.0, 119.0, 22.0 ],
+									"patching_rect" : [ 92.0, 425.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "read ddlfecam6.mov"
+									"text" : "read ddlfe-cam6.mov"
 								}
 
 							}
@@ -124,9 +137,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 344.0, 119.0, 22.0 ],
+									"patching_rect" : [ 92.0, 344.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "read ddlfecam5.mov"
+									"text" : "read ddlfe-cam5.mov"
 								}
 
 							}
@@ -149,9 +162,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 269.0, 119.0, 22.0 ],
+									"patching_rect" : [ 92.0, 269.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "read ddlfecam4.mov"
+									"text" : "read ddlfe-cam4.mov"
 								}
 
 							}
@@ -174,9 +187,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 195.0, 119.0, 22.0 ],
+									"patching_rect" : [ 92.0, 195.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "read ddlfecam3.mov"
+									"text" : "read ddlfe-cam3.mov"
 								}
 
 							}
@@ -199,10 +212,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 114.0, 119.0, 22.0 ],
-									"presentation_rect" : [ 90.0, 114.0, 0.0, 0.0 ],
+									"patching_rect" : [ 92.0, 114.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "read ddlfecam2.mov"
+									"text" : "read ddlfe-cam2.mov"
 								}
 
 							}
@@ -225,9 +237,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 92.0, 39.0, 119.0, 22.0 ],
+									"patching_rect" : [ 92.0, 39.0, 123.0, 22.0 ],
 									"style" : "",
-									"text" : "read ddlfecam1.mov"
+									"text" : "read ddlfe-cam1.mov"
 								}
 
 							}
@@ -454,9 +466,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 240.0, 101.0, 22.0 ],
+					"patching_rect" : [ 18.0, 240.0, 114.0, 22.0 ],
 					"style" : "",
-					"text" : "open audio8.wav"
+					"text" : "open audio8.wav, 1"
 				}
 
 			}
@@ -1329,7 +1341,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 18.0, 193.0, 72.0, 22.0 ],
+					"patching_rect" : [ 336.899994, 198.0, 72.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1765,6 +1777,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2003,6 +2024,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 174.0, 185.0 ],
+					"source" : [ "", -1 ]
 				}
 
 			}
