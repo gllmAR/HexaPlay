@@ -1,0 +1,17 @@
+{
+	"pattrstorage" : 	{
+		"name" : "hexaplay",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"GAIN" : [ -9.862558 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
